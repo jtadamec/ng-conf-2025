@@ -21,7 +21,7 @@
 
 # Additional stuff to keep out cloned labs
 01/*
-!01/notes.md
+!01/*.md
 02/labs/*
 04/mario/*
 04/mario
