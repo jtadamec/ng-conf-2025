@@ -106,3 +106,42 @@ Since 20.2, Zoneless is marked as stable.
 - Also, any "hack" fixes relying on setTimeout will no longer work since change detection is not ran every tick automatically without Zones
 
 ![Zoneless triggers](resources/04_zoneless-triggers.png)
+
+# 3 Different Ways to Use NgRx Signals Extensions
+
+Code used in the presentation available on github
+
+``` bash
+git clone https://github.com/markostanimirovic/3-dimensions-of-ngrx-signals.git
+```
+
+## Using SignalState
+
+- Easy to implement, useful for small components and local state
+
+``` typescript
+readonly state = signalState({
+  query: '',
+  isPending: false
+})
+```
+
+## Using SignalStore 
+
+We actually had a great demo of this from [the day 2 workshop](../02/notes.md) that should be referenced for more information. 
+
+## Using SignalStore with Events Plugin
+
+``` typescript
+customerPageEvents = eventGroup({
+  source: 'source of event page',
+  events: {
+    opened: type<void>()
+    // define more events as needed 
+  }
+
+  // global dispatch service for raising events 
+
+  this.dispatch.opened();
+})
+```
