@@ -20,7 +20,6 @@
 *.msp
 
 # Additional stuff to keep out cloned labs
-01/*
-!01/*.md
-02/labs/*
-04/mario/*
+0[1-4]/*
+!0[1-4]/*.md
+!0[1-4]/resources/
