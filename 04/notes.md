@@ -89,3 +89,14 @@ git clone https://github.com/manfredsteyer/mario.git
 Browser UI testing<br>
 [Example from the demo](https://testronaut.dev/)
 
+# Zoneless 
+
+![ZoneJs functions](resources/02_zonejs-functions.png)
+*What would you say, you DO here?*
+
+![Zone Pitfalls](resources/03_zonejs-pain.png)
+*The pain points of using ZoneJs*
+
+Zoneless (removing ZoneJs entirely) is the way that the Angular team is leaning towards in the future, via Signals and OnPush change detection.
+- Performance improvements from not having to check the entire component tree for changes
+- Easier debugging because the code isn't being proxied through ZoneJs
