@@ -100,3 +100,5 @@ Browser UI testing<br>
 Zoneless (removing ZoneJs entirely) is the way that the Angular team is leaning towards in the future, via Signals and OnPush change detection.
 - Performance improvements from not having to check the entire component tree for changes
 - Easier debugging because the code isn't being proxied through ZoneJs
+
+
