@@ -1,5 +1,3 @@
-*NOTE: if cloning this notes file, make sure you also clone the **resources** directory in the same location to be able to view linked images* 
-<hr>
 Thursday: **Angular Architecture Workshop** 
 
 Manfred Steyer: [angulararchitects.io](angulararchitects.io)<br>
