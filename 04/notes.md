@@ -101,4 +101,8 @@ Zoneless (removing ZoneJs entirely) is the way that the Angular team is leaning 
 - Performance improvements from not having to check the entire component tree for changes
 - Easier debugging because the code isn't being proxied through ZoneJs
 
+Since 20.2, Zoneless is marked as stable. 
+- Migration of existing applications will take work to update to signals, mark component changing onPush, etc
+- Also, any "hack" fixes relying on setTimeout will no longer work since change detection is not ran every tick automatically without Zones
 
+![Zoneless triggers](resources/04_zoneless-triggers.png)
